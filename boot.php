@@ -15,7 +15,7 @@ $input = json_decode(file_get_contents('php://input'), true);
 if(isset($input['entry'][0]['messaging'][0]['sender']['id'])){
     $sender = $input['entry'][0]['messaging'][0]['sender']['id'];
     $message = $input['entry'][0]['messaging'][0]['message']['text'];
-    $url = 'https://graph.facebook.com/v2.6/me/messages?access_token=<Mã_token>';
+    $url = 'https://graph.facebook.com/v2.6/me/messages?access_token=EAAWj93uDAgkBAHf3BdaJVOnpFbikntgaJxEWPxpI7cUwhJcG9Jy2ecSczaDSVDhD0yOIfzbFH5yPltn88M7ZCNecMMH315ZC2C2yG0bexWcCOq4EZAkWdxZAgndtvBjO9RTCJ2Fho24lbQ6bZCLsOidJPtOUCp0vR76KEfwUuEQZDZD';
     $ch = curl_init($url);
 
     $jsonData = '{
